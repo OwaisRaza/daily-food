@@ -6,17 +6,12 @@ import Dashboard from './components/dashboard/Dashboard';
 function App() {
   return (
     <Router>
-
-      <div className="App">
         <Switch>
-          <Route exact path="/">
-            <Signin />
-          </Route>
+          <Route exact path="/" component={Signin} />
           <Route path="/dashboard">
             <Dashboard />
           </Route>
         </Switch>
-      </div>
     </Router>
   );
 }
